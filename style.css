@@ -1,0 +1,148 @@
+html {
+	height: 100%
+}
+
+body {
+	background-color: hsl(233, 47%, 7%);
+	height: 100%;
+	font-size: 15px;
+	height: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 43%);
+	grid-template-rows: 70%;
+	justify-content: center;
+	align-content: center;
+	height: 100%;
+	grid-template-areas:
+	"A" "B";
+}
+
+img {
+	height: 100%;
+	width: 100%;
+	border-radius: 0px 10px 10px 0px;
+	opacity:  40%;
+	grid-area: B;
+}
+.imagen {
+	background-color:  hsl(277, 64%, 61%);
+	display:inline-block;
+	border-radius: 0px 10px 10px 0px;
+}
+
+span {
+	color: hsl(277, 64%, 61%);
+}
+.parrafo {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: repeat(3, auto);
+	justify-content: center;
+	text-align: center;
+	background-color: hsl(244, 38%, 16%);
+	border-radius: 10px 0px 0px 10px;
+	padding: 4rem;
+	padding-left: 4.2rem;
+	grid-area: A;
+}
+
+.parrafo h1 {
+	grid-column: 1/4;
+	font-family: 'Lexend Deca';
+	font-size: 2.5rem;
+	text-align: left;
+	justify-content: left;
+	color:hsl(0, 0%, 100%);
+	padding-bottom: 18px;
+	margin: 0px;
+
+}
+
+.parrafo p {
+	grid-column: 1/4;
+	padding-right: 4.3rem;
+	color:hsla(0, 0%, 100%, 0.75);
+	padding-bottom: 1.5rem;
+	text-align: left;
+	font-family: 'Inter';
+	margin: 0px;
+	font-size: 1rem;
+}
+
+.stats p {
+	text-align: left;
+	font-family: 'Inter';
+	padding: 0px;
+	text-transform: uppercase;
+	margin: 0px;
+	font-size: 0.7rem;
+	font-weight: 700px;
+
+
+}
+
+.stats h1 {
+	font-family: 'Lexend Deca';
+	font-size: 1.3rem;
+	text-align: left;
+	padding: 0px;
+	margin:2px;
+	font-weight:400;
+	padding-top: 2.7rem;
+}
+
+@media (max-width: 375px) {
+	.grid-container {
+		display: grid;
+		grid-template-areas: 
+		"B" 
+		"A" ;
+		grid-template-columns: 90%;
+		grid-template-rows: 35% 50%;
+		margin-top: 1rem;
+
+	}
+	.parrafo {
+		display: grid;
+		grid-template-rows: repeat(3, auto);
+		text-align: center;
+		grid-template-columns: 90%;
+		border-radius: 0px 0px 10px 10px;
+		padding: 2rem;
+	}
+
+	.parrafo h1 {
+		font-size: 1.5rem;
+		text-align: center;
+		justify-content: left;
+		color:hsl(0, 0%, 100%);
+		margin: 0px;
+		padding-top: 0px;
+	}
+	.parrafo p {
+		color:hsla(0, 0%, 100%, 0.75);
+		text-align: center;
+		font-family: 'Inter';
+		margin: 0px;
+		font-size: 0.8rem;
+	}
+	.imagen {
+		border-radius: 10px 10px 0px 0px;
+	}
+	img {
+		border-radius: 10px 10px 0px 0px;
+	}
+	.stats h1 {
+		font-size:1.4rem;
+	}
+	.stats {
+		display: grid;
+		grid-template-rows: repeat(3 auto);
+	}
+}
